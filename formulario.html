@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="formulario.html">Formulário</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Formulário de Cadastro</h1>
+  <form>
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <label>Nome: <input type="text" name="nome"></label><br>
+      <label>Sobrenome: <input type="text" name="sobrenome"></label><br>
+      <label>Email: <input type="email" name="email"></label><br>
+      <label>Senha: <input type="password" name="senha"></label><br>
+      <label>Idade: <input type="number" name="idade"></label><br>
+      <label>Gênero: 
+        <input type="radio" name="genero" value="masc"> Masc
+        <input type="radio" name="genero" value="fem"> Fem
+      </label><br>
+      <label>Endereço: <input type="text" name="endereco"></label><br>
+      <label>Cidade: <input type="text" name="cidade"></label><br>
+      <label>Estado: 
+        <select name="estado">
+          <option>SP</option><option>RJ</option><option>MG</option><option>RS</option>
+        </select>
+      </label><br>
+      <label>CEP: <input type="text" name="cep"></label><br>
+      <label>Telefone: <input type="tel" name="telefone"></label><br>
+      <label>Data de Nascimento: <input type="date" name="nascimento"></label><br>
+      <label>Cor Favorita: <input type="color" name="cor"></label><br>
+      <label>Interesses: 
+        <input type="checkbox" name="interesse" value="tecnologia"> Tecnologia
+        <input type="checkbox" name="interesse" value="esporte"> Esporte
+      </label><br>
+      <label>Arquivo: <input type="file" name="arquivo"></label><br>
+      <label>URL: <input type="url" name="site"></label><br>
+      <label>Tempo de Experiência: <input type="range" name="experiencia" min="0" max="10"></label><br>
+      <label>Comentário: <textarea name="comentario"></textarea></label><br>
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+</main>
+</body>
+</html>
